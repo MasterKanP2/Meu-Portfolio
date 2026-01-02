@@ -1,0 +1,225 @@
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    line-height: 1.6; 
+    margin: 0; 
+    background: #121212;
+    color: #faffb4; 
+}
+
+header { 
+    background: #f6ff7a;
+    color: #000000; 
+    padding: 3rem 1rem; 
+    text-align: center; 
+    position: relative;
+    overflow: hidden;
+    transition: background 0.5s ease;
+}
+
+header:hover {
+    background: rgba(246, 255, 122, 0.7);
+}
+
+.header-content {
+    background: #121212;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    max-width: 90%;
+    transition: transform 0.3s ease;
+}
+
+header:hover .header-content {
+    transform: scale(1.03);
+}
+
+header h1 { 
+    margin: 0; 
+    font-size: 2.5rem; 
+    color: #f6ff7a;
+    font-weight: bold;
+}
+
+header p { 
+    margin: 12px 0 0; 
+    font-size: 1.2rem; 
+    color: #f6ff7a;
+}
+
+.container { 
+    max-width: 1100px; 
+    margin: 40px auto; 
+    padding: 0 20px; 
+}
+
+section { 
+    background: #1e1e1e; 
+    padding: 30px; 
+    border-radius: 8px; 
+    margin-bottom: 30px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4); 
+}
+
+h2 { 
+    color: #f6ff7a; 
+    border-bottom: 3px solid #f6ff7a; 
+    padding-bottom: 8px; 
+    margin-top: 0;
+}
+
+.project { 
+    position: relative;
+    margin-bottom: 35px; 
+    padding: 20px; 
+    border-left: 5px solid #f6ff7a; 
+    background: #252525; 
+    border-radius: 0 8px 8px 0;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.project:hover { 
+    transform: translateX(5px); 
+    background: #2d2d2d; 
+}
+
+.project h3 { 
+    margin-top: 0; 
+    color: #f6ff7a; 
+    margin-bottom: 10px;
+}
+
+.project-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #f6ff7a;
+    color: #000;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.project-btn:hover {
+    background: #ffffb3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.project a.project-link {
+    color: #f6ff7a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project a.project-link:hover { 
+    text-decoration: underline; 
+    color: #ffffb3;
+}
+
+.tags { 
+    display: flex; 
+    gap: 10px; 
+    flex-wrap: wrap; 
+    margin-top: 15px; 
+}
+
+.tag { 
+    background: #333333; 
+    color: #faffb4;
+    padding: 6px 12px; 
+    border-radius: 20px; 
+    font-size: 0.85rem; 
+    border: 1px solid #444;
+}
+
+.contact-links a { 
+    margin-right: 20px; 
+    text-decoration: none; 
+    color: #f6ff7a; 
+    font-weight: bold; 
+    font-size: 1.1rem;
+}
+
+.contact-links a:hover { 
+    text-decoration: underline; 
+    color: #ffffb3;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #f6ff7a; 
+    color: #000; 
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+/* Estilos específicos das páginas de projeto individual */
+.project-detail {
+    background: #1e1e1e; 
+    padding: 40px; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.description {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: left;
+}
+
+.back-btn {
+    display: inline-block;
+    background: #f6ff7a;
+    color: #000;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: #ffffb3;
+    transform: translateY(-3px);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    header h1 { font-size: 2rem; }
+    .header-content { padding: 15px 20px; }
+    .container { padding: 0 15px; }
+    section, .project-detail { padding: 20px; }
+    .project-btn {
+        position: static;
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .gallery { grid-template-columns: 1fr; }
+}

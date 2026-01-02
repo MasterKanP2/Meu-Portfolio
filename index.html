@@ -3,69 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paulo Eduardo | Portfólio</title>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; background: #f4f4f9; color: #333; }
-        header { background: #2c3e50; color: white; padding: 2rem; text-align: center; }
-        .container { max-width: 900px; margin: 20px auto; padding: 0 20px; }
-        section { background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
-        .project { margin-bottom: 20px; padding: 15px; border-left: 5px solid #3498db; background: #fafafa; }
-        .project h3 { margin-top: 0; color: #2980b9; }
-        .tags { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
-        .tag { background: #e0e0e0; padding: 5px 10px; border-radius: 15px; font-size: 0.8rem; }
-        .contact-links a { margin-right: 15px; text-decoration: none; color: #3498db; font-weight: bold; }
-    </style>
+    <title>Paulo Eduardo | Portfólio - Micro-Knights</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Paulo Eduardo Bernardes de Souza</h1>
-    <p>Engenharia da Computação | Desenvolvedor de Jogos (GML)</p>
+    <div class="header-content">
+        <h1>Paulo Eduardo Bernardes de Souza</h1>
+        <p>Engenharia da Computação | Desenvolvedor de Jogos (GML) | Micro-Knights</p>
+    </div>
 </header>
 
 <div class="container">
     <section id="sobre">
         <h2>Sobre Mim</h2>
-        <p>Graduando em Engenharia da Computação pela UNIVESP, com sólida base em lógica de programação e experiência prática no desenvolvimento de jogos e rotinas administrativas.</p>
+        <p>Graduando em Engenharia da Computação pela UNIVESP, com sólida base em lógica de programação e experiência prática no desenvolvimento de jogos em GameMaker Studio 2. Apaixonado por mecânicas inovadoras, narrativa imersiva e level design desafiador sob a marca <strong>Micro-Knights</strong>.</p>
         <div class="contact-links">
-            <a href="mailto:pauloeduardokk2@gmail.com">📧 E-mail</a>
-            <a href="https://linkedin.com/in/seu-perfil" target="_blank">🔗 LinkedIn</a>
-            <a href="https://github.com/seu-usuario" target="_blank">💻 GitHub</a>
+            <a href="mailto:pauloeduardokk2@gmail.com" aria-label="Enviar e-mail">📧 E-mail</a>
+            <a href="https://www.linkedin.com/in/paulo-eduardo-ba340b345/" target="_blank" rel="noopener" aria-label="LinkedIn">🔗 LinkedIn</a>
+            <a href="https://github.com/MasterKanP2" target="_blank" rel="noopener" aria-label="GitHub">💻 GitHub</a>
         </div>
     </section>
 
     <section id="projetos">
-        <h2>Projetos de Destaque</h2>
+        <h2>Projetos de Destaque - Micro-Knights</h2>
         
         <div class="project">
+            <a href="deserting-plague.html" class="project-btn" target="_blank">Ver Mais →</a>
             <h3>Deserting Plague</h3>
-            <p>Jogo de sobrevivência top-down com foco em narrativa e progressão de longa duração (15h+ de gameplay).</p>
-            <div class="tags"><span class="tag">GameMaker 2</span> <span class="tag">GML</span> <span class="tag">Level Design</span></div>
+            <p>Jogo de sobrevivência top-down em um deserto apocalíptico durante uma guerra com zumbis. O protagonista viaja em um balão de ar quente, cruzando vastas áreas em uma jornada longa (15h+), com mensagens intermitentes via rádio e foco em progressão narrativa.</p>
+            <p><a href="#" class="project-link">🔗 Ver no GitHub / Itch.io</a></p>
+            <div class="tags">
+                <span class="tag">GameMaker Studio 2</span>
+                <span class="tag">GML</span>
+                <span class="tag">Narrativa</span>
+                <span class="tag">Sobrevivência</span>
+                <span class="tag">Top-Down</span>
+            </div>
         </div>
 
         <div class="project">
+            <a href="microbial-evolution.html" class="project-btn" target="_blank">Ver Mais →</a>
             <h3>Microbial Evolution</h3>
-            <p>Battle Royale simulador de evolução bacteriana com mecânicas de absorção de habilidades e design de criaturas.</p>
-            <div class="tags"><span class="tag">Inteligência Artificial</span> <span class="tag">Áudio Imersivo</span> <span class="tag">GameMaker</span></div>
+            <p>Battle Royale top-down ambientado em um laboratório microscópico. Controle uma bactéria superpoderosa que devora e copia habilidades de outros organismos. Ouça reações abafadas dos cientistas enquanto compete contra outras superbactérias em mecânicas inspiradas em Spore.</p>
+            <p><a href="#" class="project-link">🔗 Ver no GitHub / Itch.io</a></p>
+            <div class="tags">
+                <span class="tag">GameMaker Studio 2</span>
+                <span class="tag">GML</span>
+                <span class="tag">Battle Royale</span>
+                <span class="tag">Evolução</span>
+                <span class="tag">Áudio Imersivo</span>
+                <span class="tag">IA</span>
+            </div>
         </div>
 
         <div class="project">
-            <h3>Project Mountain</h3>
-            <p>Platformer focado em física de escalada e desbloqueio de habilidades técnicas.</p>
-            <div class="tags"><span class="tag">Física</span> <span class="tag">Mecânicas de Movimento</span></div>
+            <a href="rusted-climb.html" class="project-btn" target="_blank">Ver Mais →</a>
+            <h3>Rusted Climb (em desenvolvimento)</h3>
+            <p>Platformer metroidvania com mecânicas de grappling hook elástico e tiro twin-stick, inspirado em Rusted Moss. Explore um mundo melancólico, lute contra inimigos com armas variadas e domine mobilidade precisa baseada em física.</p>
+            <p><a href="#" class="project-link">🔗 Ver no GitHub / Itch.io</a></p>
+            <div class="tags">
+                <span class="tag">GameMaker Studio 2</span>
+                <span class="tag">GML</span>
+                <span class="tag">Metroidvania</span>
+                <span class="tag">Grappling Hook</span>
+                <span class="tag">Twin-Stick</span>
+                <span class="tag">Física</span>
+            </div>
         </div>
+
+        <div class="project">
+            <a href="spear-ascent.html" class="project-btn" target="_blank">Ver Mais →</a>
+            <h3>Spear Ascent</h3>
+            <p>Platformer desafiador de escalada em montanha com jornada épica. Use uma lança para cravar em superfícies, balançar, pular e desbloquear poderes progressivos, inspirado em PokeyPoke. Foco em mecânicas de movimento expressivas e precisas.</p>
+            <p><a href="#" class="project-link">🔗 Ver no GitHub / Itch.io</a></p>
+            <div class="tags">
+                <span class="tag">GameMaker Studio 2</span>
+                <span class="tag">GML</span>
+                <span class="tag">Platformer</span>
+                <span class="tag">Escalada</span>
+                <span class="tag">Lança</span>
+                <span class="tag">Física Avançada</span>
+            </div>
+        </div>
+
     </section>
 
     <section id="habilidades">
         <h2>Habilidades</h2>
         <ul>
-            <li><strong>Desenvolvimento:</strong> HTML, GameMaker Language (GML), Noções de Metroidvania e Level Design.</li>
-            <li><strong>Design:</strong> Photoshop, CorelDraw, Fireworks.</li>
-            <li><strong>Tecnologia:</strong> Windows, Pacote Office (Excel Avançado), Suporte Operacional.</li>
+            <li><strong>Desenvolvimento de Jogos:</strong> GameMaker Language (GML), GameMaker Studio 2, Level Design, Metroidvania, Mecânicas de Física e Movimento</li>
+            <li><strong>Programação/Web:</strong> HTML, CSS básico, Lógica de Programação</li>
+            <li><strong>Design Gráfico:</strong> Photoshop, CorelDraw, Fireworks</li>
+            <li><strong>Ferramentas Office:</strong> Excel Avançado, Pacote Office</li>
+            <li><strong>Outros:</strong> Suporte Operacional, Windows</li>
         </ul>
     </section>
 </div>
+
+<footer>
+    © 2026 Paulo Eduardo Bernardes de Souza - Micro-Knights ®
+</footer>
 
 </body>
 </html>
